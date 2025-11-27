@@ -6,9 +6,9 @@ workflows:
 
     environment:
       flutter: stable
-      ios_signing:
-        distribution_type: app_store
-        bundle_identifier: com.kurman.demoapp
+      # iOS code signing настраивается через UI Codemagic
+      # Перейдите в App settings > Distribution > iOS code signing
+      # и выберите "Automatic" с вашим API ключом App Store Connect
 
     scripts:
       - name: Install dependencies
